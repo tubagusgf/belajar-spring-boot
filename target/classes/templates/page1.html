@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Page 1</title>
+</head>
+<body>
+	ini adalah html page1
+	
+	<div th:text="${coba}"></div>
+	<div th:text="${jajal}"></div>
+	<div th:text="${obja.id + ' - ' + obja.info}"></div>
+	<br>
+	<br>
+	
+	<div th:each="infoObj : ${infoList}">
+		<div th:text="${infoObj.id + ' - ' + infoObj.info}"></div>
+	</div>
+	
+</body>
+</html> 
